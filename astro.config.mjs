@@ -4,6 +4,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: 'https://karthikjasti.github.io',
-  base: '/portfolio',
+  base: '/portfolio/',
   integrations: [mdx(), tailwind()]
 });
