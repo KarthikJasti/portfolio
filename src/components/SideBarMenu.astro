@@ -1,12 +1,13 @@
 ---
 const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-300";
+const base = import.meta.env.BASE_URL;
 ---
 <ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href={import.meta.env.BASE_URL}>Home</a></li>
-    <li><a class="py-3 text-base" id="projects" href={`${import.meta.env.BASE_URL}/projects`}>Projects</a></li>
-    <li><a class="py-3 text-base" id="cv" href={`${import.meta.env.BASE_URL}/cv`}>Resume</a></li>
-    <li><a class="py-3 text-base" id="contact" href={`${import.meta.env.BASE_URL}/contact`}>Contact</a></li>
+    <li><a class="py-3 text-base" id="home" href={base}>Home</a></li>
+    <li><a class="py-3 text-base" id="projects" href={`${base}projects`}>Projects</a></li>
+    <li><a class="py-3 text-base" id="cv" href={`${base}cv`}>Resume</a></li>
+    <li><a class="py-3 text-base" id="contact" href={`${base}contact`}>Contact</a></li>
 </ul>
 <script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>
 const activeItemElem = document.getElementById(sideBarActiveItemID);
