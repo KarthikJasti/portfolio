@@ -5,47 +5,78 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-2">My Projects</div>
+    <p class="text-lg text-gray-600 mb-6">Building products that solve real problems. Here's what I'm working on.</p>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
+    title="StatPlay"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    desc="Real-time sports statistics iOS app for Round Rock ISD. Built with SwiftUI and Google Sheets API. Tracks live game stats for 10+ teams, reduces manual data entry by 80%."
+    url="https://github.com/KarthikJasti/statplay"
+    badge="LIVE"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 2"
+    title="Klik"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Sealed group photo album app. Guests snap photos throughout events, nobody sees them until synchronized reveal unlocks the entire album for everyone. Built with Swift and SwiftUI."
+    url="https://github.com/KarthikJasti/klik"
+    badge="IN DEVELOPMENT"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2 mt-10">Experience & Internships</div>
+  </div>
+
+  <HorizontalCard
+    title="Software Engineering Intern"
+    img="/post_img.webp"
+    desc="ThinkNeuro LLC. Building production iOS features using Swift, SwiftUI, and Git/GitHub within an agile team. Collaborated on feature design, code reviews, and deployment."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="Polygence AI Trading Research"
+    img="/post_img.webp"
+    desc="Independent research internship studying artificial intelligence applications in financial markets. Conducted quantitative analysis, built models, and documented findings."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="NASA High School Aerospace Scholars"
+    img="/post_img.webp"
+    desc="Participated in moonshot design challenges and technical design reviews. Worked on aerospace engineering problems, learning how to approach multi-disciplinary challenges at scale."
     url="#"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-2 mt-10">Leadership & Mentorship</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
+    title="Volunteer Basketball Coach"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Founded and led youth basketball coaching program in Cedar Park for 4+ years. Taught basketball fundamentals, teamwork, and resilience to 50+ kids."
     url="#"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 5"
+    title="Centex Attack Club Basketball Team Captain"
     img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Led competitive club team through strategic planning and on-court leadership. Managed team dynamics, coordinated training, and motivated teammates through high-pressure competition."
+    url="#"
+  />
+  <div class="divider my-0"></div>
+
+  <HorizontalCard
+    title="CO-OP Director of Operations"
+    img="/post_img.webp"
+    desc="Coordinated organizational planning and daily store operations for 15+ members. Managed workflows, communicated across team, and solved operational problems in real time."
     url="#"
   />
 </BaseLayout>

@@ -1,78 +1,94 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
-import { getCollection } from "astro:content";
-import createSlug from "../lib/createSlug"
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
-    </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
-    </div>
-  </div>
-
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-xl mb-8">
+      <p class="mb-4">Hey there</p>
+      <h1 class="text-5xl font-bold mb-4">I'm Karthik Jasti</h1>
+      <h2 class="text-3xl font-bold mb-6">iOS Developer & Builder</h2>
+      
+      <p class="text-lg mb-6 leading-relaxed">
+        I'm a high school developer at Round Rock High School driven by the intersection of engineering and business. I build iOS apps that solve real problems. Started with StatPlay to help my school track sports stats, then Klik for capturing shared memories. I believe great products come from understanding users deeply, iterating quickly, and learning from failures.
+      </p>
+
+      <p class="text-lg mb-8 leading-relaxed">
+        I'm currently a Software Engineering Intern at ThinkNeuro, where I work with Swift, SwiftUI, and Git in an agile environment. I'm exploring AI applications, studying full-stack development, and applying startup thinking to everything I build. My background in leadership roles has shaped how I approach collaboration and mentorship.
+      </p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+        <div class="text-center">
+          <div class="text-3xl font-bold text-primary">10+</div>
+          <div class="text-sm">Teams Using StatPlay</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-primary">80%</div>
+          <div class="text-sm">Time Saved Data Entry</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-primary">4+</div>
+          <div class="text-sm">Years Coaching</div>
+        </div>
+        <div class="text-center">
+          <div class="text-3xl font-bold text-primary">15+</div>
+          <div class="text-sm">Members Led</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-10">
+      <h3 class="text-2xl font-bold mb-5">Featured Projects</h3>
+      
+      <HorizontalCard
+        title="StatPlay"
+        img="/post_img.webp"
+        desc="iOS sports statistics tracker built with SwiftUI and Google Sheets API. Live stat tracking for 10+ RISD teams, reducing manual data entry by 80%."
+        url="https://github.com/KarthikJasti/statplay"
+        badge="FEATURED"
+      />
+      <div class="divider my-0"></div>
+      
+      <HorizontalCard
+        title="Klik"
+        img="/post_img.webp"
+        desc="Sealed group photo-album app for events. Guests snap photos throughout the party, nobody sees them until synchronized reveal unlocks the whole album. Built with Swift and SwiftUI."
+        url="https://github.com/KarthikJasti/klik"
+      />
+    </div>
+
+    <div class="mb-10">
+      <h3 class="text-2xl font-bold mb-5">Currently Learning</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="card bg-base-200 p-4">
+          <div class="font-bold mb-2">AI and Machine Learning</div>
+          <div class="text-sm">Exploring LLMs, prompt engineering, and how AI can augment iOS apps through research internships.</div>
+        </div>
+        <div class="card bg-base-200 p-4">
+          <div class="font-bold mb-2">Business Fundamentals</div>
+          <div class="text-sm">Learning unit economics, startup strategy, and how to build products people actually want to use.</div>
+        </div>
+        <div class="card bg-base-200 p-4">
+          <div class="font-bold mb-2">Full-Stack Development</div>
+          <div class="text-sm">Building beyond iOS — exploring backends, APIs, databases, and deployment to ship end-to-end products.</div>
+        </div>
+        <div class="card bg-base-200 p-4">
+          <div class="font-bold mb-2">Aerospace Technology</div>
+          <div class="text-sm">NASA Aerospace Scholars program diving into moonshot design challenges and engineering at scale.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-10">
+      <h3 class="text-2xl font-bold mb-5">Recognition and Programs</h3>
+      <div class="text-sm space-y-2">
+        <div><strong>NASA High School Aerospace Scholars</strong> — Participated in moonshot design challenges and technical design reviews with aerospace engineering focus.</div>
+        <div><strong>Polygence AI Research Intern</strong> — Conducted independent artificial intelligence and financial analysis research through mentorship program.</div>
+        <div><strong>University of Michigan Programs</strong> — Completed data visualization, AI coursework, and nanotechnology research through selective admission.</div>
+        <div><strong>DECA State Finalist</strong> — Competed at state level in Professional Selling competitive business event.</div>
+        <div><strong>UTSA Robotics and AI Camp</strong> — Advanced technical training in robotics, artificial intelligence, and competitive programming.</div>
+      </div>
+    </div>
   </div>
-
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>

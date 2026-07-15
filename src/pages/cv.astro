@@ -1,92 +1,68 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
+<BaseLayout title="CV" sideBarActiveItemID="cv">
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Karthik Jasti</div>
+    <div class="text-sm text-gray-600 mb-8">Cedar Park, Texas • karthikjasti08@gmail.com • 512-535-0222</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="mb-10">
+    <div class="text-2xl w-full font-bold mb-4">EDUCATION</div>
+    <div class="text-sm space-y-1">
+      <div>Round Rock High School, Round Rock, Texas | May 27, 2027</div>
+      <div>Unweighted GPA: 4.0/4.0 | Weighted GPA: 5.862/6.0 | ACT: 35</div>
+    </div>
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
+  <div class="mb-10">
+    <div class="text-2xl w-full font-bold mb-4">EXPERIENCE</div>
+    <div class="text-sm space-y-4">
+      <div>
+        <div class="font-bold">Software Engineering Intern | ThinkNeuro (Remote)</div>
+        <div>Developed and refined key iOS features for production applications using Swift and SwiftUI, collaborating effectively via Git and GitHub within an agile team to enhance user experience and application stability.</div>
+      </div>
+      
+      <div>
+        <div class="font-bold">Founder & Lead Developer | StatPlay iOS Application (Round Rock, Texas)</div>
+        <div>Designed and deployed real-time sports statistics tracker using Swift, SwiftUI, and Google Sheets API, collaborating with coaches and athletic staff to deliver live performance insights for 10+ RISD teams and reduce manual data entry by 80%.</div>
+        <div>Utilized Git for version control, implementing branching strategies and code organization to maintain code quality across iterative development cycles and enable team collaboration in scaling application features.</div>
+      </div>
+      
+      <div>
+        <div class="font-bold">Back of House Team Member | Chick-fil-A Great Oaks (Round Rock, Texas) | July 2024 – November 2025</div>
+        <div>Executed and maintained 99% order accuracy in high-volume kitchen operations, collaborating with back-of-house team to ensure timely order fulfillment and food safety protocol compliance across 70+ weeks of consistent employment.</div>
+      </div>
+    </div>
   </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
+  <div class="mb-10">
+    <div class="text-2xl w-full font-bold mb-4">LEADERSHIP AND ACTIVITIES</div>
+    <div class="text-sm space-y-2">
+      <div>CO-OP Director of Operations | Coordinated organizational planning and store operations; managed workflow and communication for 15+ members.</div>
+      <div>DECA State Finalist – Professional Selling | Qualified and competed at state level in competitive business events.</div>
+      <div>Volunteer Basketball Coach and Club Captain (Centex Attack) | Led youth coaching initiatives and directed club team strategy; maintained 4+ year coaching history.</div>
+      <div>LEO Club Historian | Documented service projects and maintained organizational records supporting continuity.</div>
+    </div>
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+  <div class="mb-10">
+    <div class="text-2xl w-full font-bold mb-4">RECOGNITION AND PROGRAMS</div>
+    <div class="text-sm space-y-2">
+      <div>Polygence AI Trading Research Intern | Conducted independent artificial intelligence and financial analysis research through an online mentorship program.</div>
+      <div>NASA High School Aerospace Scholars | Participated in moonshot design challenges and technical design reviews with aerospace engineering focus.</div>
+      <div>University of Michigan Joy of Coding and Nano-Size It | Completed data visualization and AI coursework; nanotechnology research with selective admission.</div>
+      <div>UTSA Robotics and AI Camp | UIL Computer Science Competitor | Advanced technical training in robotics, artificial intelligence, and competitive programming.</div>
+    </div>
   </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
+  <div class="mb-10">
+    <div class="text-2xl w-full font-bold mb-4">SKILLS AND INTERESTS</div>
+    <div class="text-sm space-y-2">
+      <div>Technical: Swift, SwiftUI, Java, Python, Google Sheets API, Git/GitHub, Autodesk Inventor, Microsoft Excel</div>
+      <div>Languages: English (native), Telugu (fluent), Spanish (basic)</div>
+      <div>Interests: iOS app development, data analytics, robotics, aerospace technology, competitive programming</div>
+    </div>
   </div>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
 </BaseLayout>
