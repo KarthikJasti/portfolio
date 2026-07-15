@@ -2,6 +2,7 @@
 const { title, img, desc, url, badge, tags, target = "_blank" } = Astro.props;
 import { Image } from "astro:assets";
 const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
+const imgSrc = img && img.startsWith("/") ? `${import.meta.env.BASE_URL}${img}` : img;
 ---
 
 <div
@@ -12,7 +13,7 @@ const tag_url = url.split("/").slice(0, -1).join("/") + "/tag";
       {
         img && (
           <Image
-            src={img}
+            src={imgSrc}
             width={750}
             height={422}
             format="webp"
