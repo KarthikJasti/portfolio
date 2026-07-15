@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://karthikjasti.github.io/portfolio',
-  base: '/portfolio',
+  site: 'https://portfolio-karthikjasti.vercel.app',
   integrations: [mdx(), sitemap(), tailwind()]
 });
